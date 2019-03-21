@@ -1,5 +1,6 @@
 const song = document.querySelector(".song");
 const play = document.querySelector(".play");
+const replay = document.querySelector(".replay");
 const outline = document.querySelector(".moving-outline circle");
 const video = document.querySelector(".vid-container video");
 //Sounds
@@ -28,6 +29,19 @@ sounds.forEach(sound => {
 play.addEventListener("click", function() {
   checkPlaying(song);
 });
+
+replay.addEventListener("click", function() {
+    restartSong(song);
+    
+  });
+
+
+const restartSong = song =>{
+    let currentTime = song.currentTime;
+    song.currentTime = 0;
+    console.log("ciao")
+
+}
 
 timeSelect.forEach(option => {
   option.addEventListener("click", function() {
