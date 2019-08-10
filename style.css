@@ -91,3 +91,76 @@ video {
   width: 100%;
   z-index: -10;
 }
+
+.play{
+  margin: auto;
+  position: relative;
+}
+.HeaderTitle{
+  position: fixed;
+  color: white;
+  top: 5% ;
+  font-size: 50px;
+
+}
+@media only screen and (max-width:767px){
+  .app{
+    height: 100%;
+  }
+  .HeaderTitle{
+    font-size: 18px;
+  }
+  video{
+    height: 100%;
+    width: auto;
+    display: block;
+  }
+  .time-select{
+    position: fixed;
+    height: 50%;
+    bottom: 0;
+    left: 0%;
+    width: 50%;
+  }
+    
+  .time-select button{
+    width: 70%;
+    height: 20%;
+    color: white;
+  border: 1px solid white;
+  }
+
+  .time-select button:hover {
+  background: white;
+  color: rgb(63, 63, 63);
+  border: 0px solid white;
+    box-shadow: 0px 0px 10px black;
+  
+  }
+  .sound-picker{
+    
+    position: fixed;
+    height: 50%;
+    bottom: 0;
+    right: 0%;
+    width: 50%;
+  }
+  .sound-picker button{
+    transition: ease-in-out 0.4s;
+    box-shadow: 0px 0px 5px black;
+  }
+  .sound-picker button:hover{
+    box-shadow: 0px 0px 10px black;
+  }
+  .player-container{
+    height: 50%;
+    position: fixed;
+    top: 0;
+  }
+  .play{
+    height: 10%;
+  }
+  .time-display{
+    font-size: 20px;
+  }
+}                                                         
