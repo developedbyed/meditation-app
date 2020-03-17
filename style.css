@@ -84,6 +84,12 @@
   bottom: 10%;
 }
 
+.play {
+  position: relative;
+  top: 100px;
+  left: 10px;
+}
+
 video {
   position: fixed;
   top: 0%;
