@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .time-select,
@@ -54,6 +54,13 @@
 .time-select button:hover {
   background: white;
   color: black;
+}
+
+.play {
+  margin: 28% 0 0 5%;
+}
+.replay {
+  transform: translateY(-50px);
 }
 
 .player-container {
