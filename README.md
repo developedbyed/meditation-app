@@ -1,2 +1,2 @@
-# meditation-app
-Meditation app tutorial
+# A web application that helps you to meditate
+#let's enjoy tha liberty
