@@ -1,93 +1,83 @@
+@import "https://unpkg.com/open-props";
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.app {
-  height: 100vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  font-family: "Montserrat", sans-serif;
+#myVideo {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -10;
 }
 
-.time-select,
-.sound-picker {
-  height: 80%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  flex: 1;
-}
-.time-select button,
-.sound-picker button {
-  color: white;
-  width: 30%;
-  height: 10%;
-  background: none;
-  font-size: 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  border: 2px solid white;
-  transition: all 0.5s ease;
+#all {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.sound-picker button {
-  border: none;
-  height: 120px;
-  width: 120px;
-  padding: 30px;
-  border-radius: 50%;
-}
-.sound-picker button:nth-child(1) {
-  background: #4972a1;
-}
-.sound-picker button:nth-child(2) {
-  background: #a14f49;
-}
-.sound-picker button img {
-  height: 100%;
+#timeBtns,
+#playing,
+#type {
+    width: 30vw;
 }
 
-.time-select button:hover {
-  background: white;
-  color: black;
+#timeBtns {
+    display: grid;
+    gap: 1em;
+    justify-content: center;
+    padding-right: 15vw;
 }
 
-.player-container {
-  position: relative;
-  height: 80%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-direction: column;
-  flex: 1;
+#min2,
+#min5,
+#min10 {
+    background-color: rgba(255, 255, 255, 0.5);
+    height: 2em;
+    width: 8em;
+    font-size: var(--font-size-fluid-1);
+    border: none;
 }
 
-.player-container svg {
-  position: absolute;
-  height: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) rotate(-90deg);
-  pointer-events: none;
-}
-.player-container svg circle {
-  transition: all 0.2s ease-in-out;
-}
-.time-display {
-  color: white;
-  position: absolute;
-  font-size: 50px;
-  bottom: 10%;
+#type {
+    display: grid;
+    position: relative;
+    gap: 3em;
+    left: 5vw;
+    padding-left: 15vw
 }
 
-video {
-  position: fixed;
-  top: 0%;
-  left: 0%;
-  width: 100%;
-  z-index: -10;
+#type1 {
+    background-color: rgba(255, 132, 0, 0.75);
+    border-radius: 50%;
+    padding: 1em;
+}
+
+#type2 {
+    background-color: rgba(0, 132, 255, 0.75);
+    border-radius: 50%;
+    padding: 1em;
+}
+
+#playing {
+    display: contents;
+}
+
+#imgTrack,
+#imgPlay {
+    position: fixed;
+    align-items: center;
+}
+
+#imgTrack {
+    width: 30vw;
+    height: 30vh;
+}
+
+#imgPlay {
+    width: 10vw;
+    height: 10vh
 }
